@@ -1,0 +1,54 @@
+{
+    "name": "ajmariduena/laravel-paymentez",
+    "description": "Laravel Paymentez",
+    "keywords": [
+        "ajmariduena",
+        "laravel-paymentez"
+    ],
+    "homepage": "https://github.com/ajmariduena/laravel-paymentez",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alexander Josue Maridueña Canseco",
+            "email": "ajmariduena@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ajmariduena\\LaravelPaymentez\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ajmariduena\\LaravelPaymentez\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ajmariduena\\LaravelPaymentez\\LaravelPaymentezServiceProvider"
+            ],
+            "aliases": {
+                "LaravelPaymentez": "Ajmariduena\\LaravelPaymentez\\LaravelPaymentezFacade"
+            }
+        }
+    }
+}
