@@ -1,13 +1,13 @@
 <?php
 
-namespace Ajmariduena\LaravelPaymentez;
+namespace Ajmariduena\LaravelPaymentez\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \Ajmariduena\LaravelPaymentez\Skeleton\SkeletonClass
  */
-class LaravelPaymentezFacade extends Facade
+class LaravelPaymentez extends Facade
 {
     /**
      * Get the registered name of the component.

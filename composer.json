@@ -11,16 +11,16 @@
     "authors": [
         {
             "name": "Alexander Josue Maridueña Canseco",
-            "email": "ajmariduena@gmail.com",
-            "role": "Developer"
+            "email": "ajmariduena@gmail.com"
         }
     ],
     "require": {
         "php": "^7.1",
-        "illuminate/support": "^6.0"
+        "illuminate/support": "^7.12",
+        "kitetail/zttp": "^0.6.0",
+        "symfony/validator": "^5.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0",
         "phpunit/phpunit": "^8.0"
     },
     "autoload": {
@@ -36,7 +36,6 @@
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "config": {
         "sort-packages": true
